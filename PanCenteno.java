@@ -1,11 +1,11 @@
-public class Pollo extends Ingredientes {
-	
+public class PanCenteno extends Ingredientes {
+
 	private double costo;
 	private String descripcion;
 
-	Pollo() {
-		costo = 15;
-		descripcion = "Pollo";
+	PanCenteno() {
+		costo = 3.50;
+		descripcion = "Pan de Centeno";
 	}
 
 	public double getCosto() {
@@ -15,5 +15,5 @@ public class Pollo extends Ingredientes {
 	public String getDescripcion() {
 		return descripcion;
 	}
-
+	
 }

@@ -8,4 +8,12 @@ public class Jitomate extends Ingredientes {
 		descripcion = "Jitomate"
 	}
 
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public double getCosto() {
+		return costo;
+	}
+
 }

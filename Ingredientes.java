@@ -1,6 +1,9 @@
 public abstract class Ingredientes  {
 	
-	public double getCosto();
-	public String getDescripcion();
+	double costo = 0;
+	String descripcion = " ";
+
+	public abstract double getCosto();
+	public abstract String getDescripcion();
 
 }

@@ -1,8 +1,6 @@
-public abstract class Pizza implements WaySub {
+public abstract class Pizza {
 	
 	public double getCosto();
-
-	public double getCostoTotal();
 
 	public String getDescripcion();
 

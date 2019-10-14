@@ -1,11 +1,11 @@
-public class Pollo extends Ingredientes {
+public class Catsup extends Ingredientes {
 	
 	private double costo;
 	private String descripcion;
 
-	Pollo() {
-		costo = 15;
-		descripcion = "Pollo";
+	Catsup() {
+		costo = 2;
+		descripcion = "Catsup";
 	}
 
 	public double getCosto() {
