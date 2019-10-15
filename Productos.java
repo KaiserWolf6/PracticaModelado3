@@ -1,5 +1,5 @@
 public class Productos implements WaySub {
-	
+	         
 	private String descripcion;
 	private double costo;
 	private double precio_total;
