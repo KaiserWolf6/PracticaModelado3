@@ -1,5 +1,7 @@
 public interface WaySub {
 	
-	public double costoTotal();
+	public double precioTotal();
+	public double getCosto();
+	public String getDescripcion();
 
 }

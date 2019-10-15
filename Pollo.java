@@ -8,10 +8,12 @@ public class Pollo extends Ingredientes {
 		descripcion = "Pollo";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

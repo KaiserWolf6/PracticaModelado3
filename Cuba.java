@@ -8,10 +8,12 @@ public class Cuba extends Pizza {
 		costo = 216;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 		System.out.println("El costo es de: " + costo);

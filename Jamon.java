@@ -8,10 +8,12 @@ public class Jamon extends Ingredientes {
 		descripcion = "Jamon";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

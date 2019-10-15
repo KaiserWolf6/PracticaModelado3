@@ -8,10 +8,12 @@ public class Cebolla extends Ingredientes {
 		descripcion = "Cebolla";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

@@ -8,10 +8,12 @@ public class PanTrigo extends Ingredientes {
 		descripcion = "Pan de Trigo";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

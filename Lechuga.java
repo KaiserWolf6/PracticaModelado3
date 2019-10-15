@@ -8,10 +8,12 @@ public class Lechuga extends Ingredientes {
 		descripcion = "Lechuga";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

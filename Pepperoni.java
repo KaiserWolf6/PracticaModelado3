@@ -8,10 +8,12 @@ public class Pepperoni extends Ingredientes {
 		descripcion = "Pepperoni";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

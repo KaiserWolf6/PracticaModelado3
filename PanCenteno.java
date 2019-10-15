@@ -8,10 +8,12 @@ public class PanCenteno extends Ingredientes {
 		descripcion = "Pan de Centeno";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
-
+	
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

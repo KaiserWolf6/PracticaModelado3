@@ -8,10 +8,12 @@ public class Jitomate extends Ingredientes {
 		descripcion = "Jitomate"
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}

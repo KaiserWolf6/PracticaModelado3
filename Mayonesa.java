@@ -8,10 +8,12 @@ public class Mayonesa extends Ingredientes {
 		descripcion = "Mayonesa";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

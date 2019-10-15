@@ -8,10 +8,12 @@ public class Mostaza extends Ingredientes {
 		descripcion = "Mostaza";
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}

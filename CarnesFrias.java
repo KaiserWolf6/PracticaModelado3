@@ -8,10 +8,12 @@ public class CarnesFrias extends Pizza {
 		costo = 256;
 	}
 
+	@Override
 	public String getDescripcion() {
 		return descripcion;
 	}
 
+	@Override
 	public double getCosto() {
 		return costo;
 		System.out.println("El costo es de: " + costo);
