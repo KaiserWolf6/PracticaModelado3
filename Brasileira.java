@@ -2,10 +2,12 @@ public class Brasileira extends Pizza {
 	
 	private String descripcion;
 	private double costo;
+	private String ingredientes;
 
-	CarnesFrias() {
+	Brasileira() {
 		descripcion = "Pizza Brasileira";
 		costo = 290;
+		ingredientes = "Salchicha, queso manchego & la masa es gruesa";
 	}
 
 	@Override
@@ -16,7 +18,12 @@ public class Brasileira extends Pizza {
 	@Override
 	public double getCosto() {
 		return costo;
-		System.out.println("El costo es de: " + costo);
+		//System.out.println("El costo es de: " + costo);
+	}
+
+	@Override
+	public String getIngredientes() {
+		return ingredientes;
 	}
 
 }
