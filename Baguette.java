@@ -1,7 +1,23 @@
-public abstract class Baguette extends Ingredientes implements WaySub {
+public class Baguette  {
 	
-	public abstract String getDescripcion();
+	double costo = 0;
+	String descripcion = " ";
 
-	public abstract double getCosto();
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public double getCosto() {
+		return costo;
+	}
+
+	public void setCosto(double costo) {
+		this.costo = costo;
+	}
+	//public abstract String getIngredientes();
 
 }

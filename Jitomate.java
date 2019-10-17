@@ -5,7 +5,7 @@ public class Jitomate extends Ingredientes {
 
 	Jitomate() {
 		costo = 3;
-		descripcion = "Jitomate"
+		descripcion = "Jitomate";
 	}
 
 	@Override

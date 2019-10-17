@@ -1,33 +1,79 @@
-public class BaguettePersonalizado extends Baguette {
+import java.util.ArrayList;
 
+/*En esta clase se utiliza adapter*/
+public class BaguettePersonalizado implements WaySub{
+
+	/*Lista de ingredientes*/
+	ArrayList<Ingredientes> lista_ingredientes;
+	ArrayList<Double> lista_precios;
+	/*Ingrediente para el baguette personalizado*/
 	Ingredientes ingredientes;
+	/*Variable de la clase Baguettes*/
+	Baguette baguettes;
+	/*Booleano que nos permite agregar los ingredientes al baguette*/
+	boolean agregar = false;
 
-	public BaguettePersonalizado(Ingredientes ingredientes) {
-		this.ingredientes = ingredientes;
+	/*Constructor del Baguette Personalizado, recibe un ingrediente*/
+	public BaguettePersonalizado(Baguette baguette) {
+		//this.ingredientes = ingredientes;
+		this.baguettes = baguette;
+		//agregar = false;
+		lista_ingredientes = new ArrayList<Ingredientes>();
+
 	}
 
+	/*Obtiene la descripcion del ingrediente*/
 	@Override
 	public String getDescripcion() {
-		return ingredientes.getDescripcion() + "se agrego al baguette";
+		return baguettes.getDescripcion();
+	}
+
+	/*Obtiene el costo del ingrediente*/
+	@Override
+	public double getCosto() {
+		return baguettes.getCosto();
+	}
+
+	/*Pone la descripcion del ingrediente en el baguette*/
+	public void setDescripcion(String descripcion) {
+		this.baguettes.setDescripcion(descripcion);
+	}
+
+	/*Pone el precio del ingrediente*/
+	public void setCosto(double costo) {
+		this.baguettes.setCosto(costo);
 	}
 
 	@Override
-	public double getCosto() {
-		return ingredientes.getCosto();
+	public String getIngredientes() {
+		String random = "";
+		return random;
 	}
 
-	public void setDescripcion(String descripcion) {
-		ingredientes.getDescripcion = descripcion;
-	}
-
-	public void setCosto(double costo) {
-		ingredientes.getCosto() = costo;
-	}
-
-	public double precioTotal(double precio) {
-		precio = ingredientes.getCosto() + ingredientes.getCosto();
+	/*Permite hacer la suma total del baguette personalizado
+	 *precio el valor de un ingrediente
+	 *precio2 el valor del segundo ingrediente
+	 *regresa un double
+	 */
+	public double precioTotal(double precio, double precio2) {
+		precio = ingredientes.getCosto();
+		precio2 = ingredientes.getCosto();
+		double precio3 = precio + precio2;
 		System.out.println("El precio del baguette es de: ");
-		return precio;
+		return precio3;
+	}
+
+	/*Nos permite agregar ingredientes al baguette
+     *i el ingrediente que se recibe para agregarlo al baguette
+     *comando es el comando que ingresara el usuario en la terminal Y/N 
+	 */
+	public void agregarIngrediente(Ingredientes i) {
+		lista_ingredientes.add(i);
+	}
+
+	public void agregarCosto(Ingredientes i) {
+		double costo = i.getCosto();
+		lista_precios.add(costo);
 	}
 	
 }

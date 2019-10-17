@@ -9,6 +9,20 @@ public class Practica3  {
 		WaySub pizza3 = new Toluca();
 		WaySub pizza4 = new Italiana();
 		WaySub pizza5 = new CarnesFrias();
+		Ingredientes pollo = new Pollo();
+		Ingredientes cebolla = new Cebolla();
+		Ingredientes catsup = new Catsup();
+		Ingredientes jamon = new Jamon();
+		Ingredientes jitomate = new Jitomate();
+		Ingredientes lechuga = new Lechuga();
+		Ingredientes mayonesa = new Mayonesa();
+		Ingredientes mostaza = new Mostaza();
+		Ingredientes pan_centeno = new PanCenteno();
+		Ingredientes pan_maiz = new PanMaiz();
+		Ingredientes pan_trigo = new PanTrigo();
+		Ingredientes pepperoni = new Pepperoni();
+		Baguette baguette = new Baguette();
+		WaySub baguette_personalizado = new BaguettePersonalizado(baguette);
 		System.out.println("Bienvenido a WaySub!");
 		System.out.println("Por favor, que desea ordenar: ");
 		System.out.println("1.- Pizza" + "\n" + "2.- Baguette");
@@ -56,7 +70,24 @@ public class Practica3  {
 				}
 				break;
 			case 2:
-				System.out.println("En mantenimiento...");
+				//WaySub baguette = new BaguettePersonalizado();
+				//System.out.println("En mantenimiento");
+				System.out.println("Que ingredientes desea agregar a su baguette?");
+				System.out.println("Para poder agregar un ingrediente debe ingresar 1, en caso contrario 0");
+				System.out.println("Si da 0, se sumara el precio de todos los ingredientes y le daremos cuanto debe de pagar en total");	
+				int comando;
+				//comando = sc.nextInt();
+				baguette_personalizado.agregarIngrediente(pollo);
+				baguette_personalizado.agregarCosto(pollo);
+				baguette_personalizado.agregarIngrediente(pan_trigo);
+				baguette_personalizado.agregarCosto(pan_trigo);
+				baguette_personalizado.agregarIngrediente(pepperoni);
+				baguette_personalizado.agregarCosto(pepperoni);
+				baguette_personalizado.agregarIngrediente(jitomate);
+				baguette_personalizado.agregarCosto(jitomate);
+				baguette_personalizado.agregarIngrediente(lechuga);
+				baguette_personalizado.agregarCosto(lechuga);
+
 				break;
 			default:
 				System.out.println("Debe seleccionar alguna opcion");
