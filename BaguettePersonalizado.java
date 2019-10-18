@@ -1,11 +1,8 @@
-import java.util.ArrayList;
+//import java.util.ArrayList;
 
 /*En esta clase se utiliza adapter*/
 public class BaguettePersonalizado implements WaySub{
 
-	/*Lista de ingredientes*/
-	ArrayList<Ingredientes> lista_ingredientes;
-	ArrayList<Double> lista_precios;
 	/*Ingrediente para el baguette personalizado*/
 	Ingredientes ingredientes;
 	/*Variable de la clase Baguettes*/
@@ -18,7 +15,7 @@ public class BaguettePersonalizado implements WaySub{
 		//this.ingredientes = ingredientes;
 		this.baguettes = baguette;
 		//agregar = false;
-		lista_ingredientes = new ArrayList<Ingredientes>();
+		//lista_ingredientes = new ArrayList<Ingredientes>();
 
 	}
 
@@ -63,17 +60,5 @@ public class BaguettePersonalizado implements WaySub{
 		return precio3;
 	}
 
-	/*Nos permite agregar ingredientes al baguette
-     *i el ingrediente que se recibe para agregarlo al baguette
-     *comando es el comando que ingresara el usuario en la terminal Y/N 
-	 */
-	public void agregarIngrediente(Ingredientes i) {
-		lista_ingredientes.add(i);
-	}
-
-	public void agregarCosto(Ingredientes i) {
-		double costo = i.getCosto();
-		lista_precios.add(costo);
-	}
 	
 }

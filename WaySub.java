@@ -4,7 +4,6 @@ public interface WaySub {
 	public double getCosto();
 	public String getDescripcion();
 	public String getIngredientes();
-	public void agregarIngrediente(Ingredientes i);
-	public void agregarCosto(Ingredientes i);
+	//public void agregarIngrediente(Ingredientes i);
 
 }

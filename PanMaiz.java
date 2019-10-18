@@ -5,7 +5,7 @@ public class PanMaiz extends Ingredientes {
 
 	PanMaiz() {
 		costo = 2.50;
-		descripcion = "Pan de trigo";
+		descripcion = "Pan de maiz";
 	}
 
 	@Override
